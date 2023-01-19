@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5AC9AA20-FA8F-4A33-B4D0-DD4E6E94FD5F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ChikenProject</RootNamespace>
+    <AssemblyName>ChikenProject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Talha\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>701998.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D916A577ED4199F3D235C40D09FAEDE382AA34C9</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ChikenProject_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\MetroModernUI.1.4.0.0\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp">
+      <HintPath>..\FontAwesome.Sharp.5.15.3\lib\net40\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Fluent, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.FluentDark, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2013Light, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2020.1.113.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BL\ActionType.cs" />
+    <Compile Include="BL\BL_Admin.cs" />
+    <Compile Include="BL\BL_Cart.cs" />
+    <Compile Include="BL\BL_Cashier.cs" />
+    <Compile Include="BL\BL_DesiStock.cs" />
+    <Compile Include="BL\BL_EggStock.cs" />
+    <Compile Include="BL\BL_Expenses.cs" />
+    <Compile Include="BL\BL_Invoice.cs" />
+    <Compile Include="BL\BL_InvoiceItem.cs" />
+    <Compile Include="BL\BL_Item.cs" />
+    <Compile Include="BL\BL_PurchaseDesi.cs" />
+    <Compile Include="BL\BL_PurchaseEgg.cs" />
+    <Compile Include="BL\BL_PurchaseStock.cs" />
+    <Compile Include="BL\BL_RateList.cs" />
+    <Compile Include="BL\BL_Stock.cs" />
+    <Compile Include="BL\BL_Vendor.cs" />
+    <Compile Include="BL\Helper.cs" />
+    <Compile Include="Cashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier.Designer.cs">
+      <DependentUpon>Cashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierUpdate.Designer.cs">
+      <DependentUpon>CashierUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyInvoice.Designer.cs">
+      <DependentUpon>DailyInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DL\DataLayer.cs" />
+    <Compile Include="EmailSender.cs" />
+    <Compile Include="Expenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expenses.Designer.cs">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpensesInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpensesInput.Designer.cs">
+      <DependentUpon>ExpensesInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice.Designer.cs">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item.Designer.cs">
+      <DependentUpon>Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemInput.Designer.cs">
+      <DependentUpon>ItemInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemRateUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemRateUpdate.Designer.cs">
+      <DependentUpon>ItemRateUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemShow.Designer.cs">
+      <DependentUpon>ItemShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginCashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginCashier.Designer.cs">
+      <DependentUpon>LoginCashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PurchaseStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseStock.Designer.cs">
+      <DependentUpon>PurchaseStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseStockInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseStockInput.Designer.cs">
+      <DependentUpon>PurchaseStockInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RateList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RateList.Designer.cs">
+      <DependentUpon>RateList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RateListInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RateListInput.Designer.cs">
+      <DependentUpon>RateListInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RateListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RateListItem.Designer.cs">
+      <DependentUpon>RateListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SighnUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SighnUp.Designer.cs">
+      <DependentUpon>SighnUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock.Designer.cs">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorInput.Designer.cs">
+      <DependentUpon>VendorInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendorShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorShow.Designer.cs">
+      <DependentUpon>VendorShow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier.resx">
+      <DependentUpon>Cashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierUpdate.resx">
+      <DependentUpon>CashierUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyInvoice.resx">
+      <DependentUpon>DailyInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expenses.resx">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpensesInput.resx">
+      <DependentUpon>ExpensesInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice.resx">
+      <DependentUpon>Invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item.resx">
+      <DependentUpon>Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemInput.resx">
+      <DependentUpon>ItemInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemRateUpdate.resx">
+      <DependentUpon>ItemRateUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemShow.resx">
+      <DependentUpon>ItemShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginCashier.resx">
+      <DependentUpon>LoginCashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PurchaseStock.resx">
+      <DependentUpon>PurchaseStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseStockInput.resx">
+      <DependentUpon>PurchaseStockInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RateList.resx">
+      <DependentUpon>RateList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RateListInput.resx">
+      <DependentUpon>RateListInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RateListItem.resx">
+      <DependentUpon>RateListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SighnUp.resx">
+      <DependentUpon>SighnUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock.resx">
+      <DependentUpon>Stock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorInput.resx">
+      <DependentUpon>VendorInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorShow.resx">
+      <DependentUpon>VendorShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ChikenProject_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green_home-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\463016-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\728933-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\616650-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preview_print_document_stock-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_2317749_computer_document_networkprinter_office_outline_icon_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\THE CHICKEN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\THE CHICKEN1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7562836.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4319078.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2711065.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8296721.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3478931.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\977496.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1832902.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\910643.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1170456.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4182900.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2547465.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1161309.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\653389.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Chiken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9646652.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10515_refresh_yellow_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="701998.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
